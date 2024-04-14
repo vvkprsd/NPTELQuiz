@@ -8,9 +8,9 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    overflow: auto; /* Added to enable scrolling */
+    overflow: auto;
     background-color: #222;
 }
 
@@ -42,19 +42,27 @@ body {
 .container-fluid {
     z-index: 1;
     width: 100%;
-    max-width: 800px; /* Added to limit the container width */
-    padding: 0 1rem; /* Added padding for better spacing on mobile */
+    max-width: 800px;
+    padding: 0 1rem;
 }
 
 h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.logo {
+    
+        max-width: 145px;
+        height: auto;
+        margin-top: 22px;
+    
+}
+
 .quiz-buttons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Added responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
 .quiz-buttons .btn {
@@ -68,6 +76,13 @@ h1, h2 {
 
 .quiz-buttons .btn:hover {
     background-color: #444;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
