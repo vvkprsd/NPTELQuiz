@@ -79,7 +79,7 @@ h1, h2 {
 }
 
 .quiz-buttons .btn:last-child {
-    width: 100%;
+    grid-column: 1 / -1; 
 }
 
 footer {
